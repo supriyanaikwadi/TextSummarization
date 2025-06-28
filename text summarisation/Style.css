@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Background & Overlay (For index, login, and signup) ===== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('picture.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Dark overlay effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent effect */
+    z-index: 1;
+}
+
+/* ===== Center Box (Glassmorphism Effect) ===== */
+.container {
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent effect */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* ===== Heading Styles ===== */
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ===== Input Fields & Textarea ===== */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: none;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    background: #ff7b00;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #e66a00;
+}
+
+/* Space between login & signup buttons */
+.btn-space {
+    margin-top: 10px;
+}
+
+/* ===== Links (Login/Signup) ===== */
+.link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Summary Page - Full-Screen Box ===== */
+/* ===== Full-Screen Summary Box ===== */
+.summary-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #f4f4f4; /* Light gray background */
+}
+
+/* Full-Screen Summary Container */
+.summary-container {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: bisque;
+    overflow-y: auto;
+}
+
+/* Text Input (User enters text here) */
+.summary-container textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+/* Summary Button */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #ff7b00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e66a00;
+}
+
+/* Summary Output Box (Displays the summary) */
+#summaryOutput {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    background: #ddd;
+    border-radius: 8px;
+    min-height: 150px; /* Ensures visible space for summary */
+    color: black;
+    border: 1px solid #ccc;
+}
+
